@@ -4,7 +4,6 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { MovieApiContext } from "./context";
-import Footer from "./components/footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const MOVIE_API_KEY = atob(

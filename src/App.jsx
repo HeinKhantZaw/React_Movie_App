@@ -15,9 +15,7 @@ function App() {
           <Route exact path={`${process.env.PUBLIC_URL}/home`}>
             <Home />
           </Route>
-          <Route exact path={`${process.env.PUBLIC_URL}/detail/:movieID`}>
-            <Detail />
-          </Route>
+          <Route path={`${process.env.PUBLIC_URL}/detail/:movieID`} component={Detail}/>
           <Route path="*">
             <Error />
           </Route>
