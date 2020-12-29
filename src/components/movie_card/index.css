@@ -1,0 +1,13 @@
+img {
+    transition: .5s ease;
+}
+@media (min-width: 576px) {
+    .scale-on-hover:hover {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        box-shadow: 0 10px 10px rgba(0, 0, 0, .15) !important;
+    }
+}
+.card{
+    background-color: ghostwhite !important;
+}
