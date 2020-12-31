@@ -28,7 +28,7 @@ class PercentageCircle extends React.Component {
                     r={radius}
                     strokeWidth={`${strokeWidth}px`}
                     stroke={"#ddd"}
-                    fill={"none"}
+                    fill={"#fff"}
                 />
                 <circle
                     className="circle-progress"
@@ -52,7 +52,7 @@ class PercentageCircle extends React.Component {
                     y="50%"
                     dy=".3em"
                     textAnchor="middle"
-                    fontSize={"2em"}
+                    fontSize={"1em"}
                     fontWeight={"bold"}
                     fill={"#1c7430"}
                 >
