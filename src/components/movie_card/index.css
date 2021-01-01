@@ -16,4 +16,5 @@
     position: absolute;
     margin-top: -20px;
     margin-left: -13px;
+    z-index: 1;
 }

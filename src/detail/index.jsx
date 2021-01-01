@@ -2,7 +2,8 @@ import React, {useContext} from "react";
 import {MovieApiContext} from "../context";
 import {useReducerAPI} from "../api";
 import {useParams} from "react-router-dom";
-import Review from "../components/review"
+import "./index.css"
+import Loading from "../components/loading";
 
 const Detail = () => {
     let {movieID} = useParams();
@@ -12,25 +13,29 @@ const Detail = () => {
     if (movieDetails && movieDetails.data) {
         return (
             <>
-                <div className="container">
-                    <div className="row">
-                        <div className="col-lg-8 mx-auto">
-                            <h1 className="brand-heading">{movieDetails.data.original_title}</h1>
-                            <p className="intro-text">{movieDetails.data.tagline}
-                            </p><a className="btn btn-link btn-circle" role="button" href="#about">
-                            <i className="fa fa-angle-double-down animated"/></a>
+                <div className="photo-card">
+                    {/*<img className="poster" src={`https://image.tmdb.org/t/p/w200${movieDetails.data.poster_path}`}*/}
+                    {/*     alt="moviePoster"/>*/}
+                    <div className="photo-background"
+                         style={{backgroundImage: `url(https://image.tmdb.org/t/p/w780${movieDetails.data.backdrop_path})`}}/>
+                    <div className="photo-details">
+                        <h1>{movieDetails.data.original_title}</h1>
+                        <p className="intro-text">{movieDetails.data.tagline}</p>
+                        <p>{movieDetails.data.overview} </p>
+                        <p className="movieBudget">Budget: ${movieDetails.data.budget}</p>
+                        <p className="movieRevenue">Revenue: ${movieDetails.data.revenue}</p>
+                        <p className="movieReleaseDate">ReleaseDate: {movieDetails.data.release_date}</p>
+                        <div className="photo-tags">
+                            <ul>
+                                {movieDetails.data.genres.map((item) => {
+                                    return <li>{item.name}</li>;
+                                })}
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <img className="poster" src={`https://image.tmdb.org/t/p/w200/${movieDetails.data.poster_path}`}
-                     alt="moviePoster"/>
-                <p className="movieName">{movieDetails.data.original_title}</p>
-                <p className="movieRevenue">Revenue:${movieDetails.data.revenue}</p>
-                <p className="movieOverview">Overview: {movieDetails.data.overview}</p>
-                <p className="movieReleaseDate">RelaseDate:{movieDetails.data.release_date}</p>
-                <Review/>
             </>)
     }
-    return <>{movieDetails.loading && <div>LOADING</div>}</>;
+    return <>{movieDetails.loading && <Loading/>}</>;
 };
 export default Detail;

@@ -2,6 +2,8 @@ import React, {useContext} from "react";
 import {MovieApiContext} from "../context";
 import {useReducerAPI} from "../api";
 import MovieCard from "../components/movie_card"
+import Loading from "../components/loading";
+import './index.css'
 
 const Home = function () {
     const movieApiKey = useContext(MovieApiContext);
@@ -24,7 +26,7 @@ const Home = function () {
             </>
         )
     }
-    return <>{trendingMovies.loading && <div>LOADING</div>}</>;
+    return <>{trendingMovies.loading && <Loading/>}</>;
 };
 
 export default Home;
