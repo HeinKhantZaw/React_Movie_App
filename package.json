@@ -2,7 +2,7 @@
   "name": "react_movie_app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/HeinKhantZaw.github.io/React_Movie_App",
+  "homepage": "https://heinkhantzaw.github.io/React_Movie_App/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
