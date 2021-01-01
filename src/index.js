@@ -10,7 +10,6 @@ import Header from "./components/header"
 const MOVIE_API_KEY = atob(
   process.env.MOVIE_API_KEY || "YjY0YjMwZmY4YTE4M2RiZmQ1ODBlY2ZiMDAyMWQ3Y2Q="
 );
-console.log(MOVIE_API_KEY);
 ReactDOM.render(
   <React.StrictMode>
     <MovieApiContext.Provider value={MOVIE_API_KEY}>
