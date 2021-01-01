@@ -4,7 +4,7 @@ const Header = ()=>{
     <>
     <nav className="navbar navbar-dark navbar-expand-lg fixed-top portfolio-navbar gradient">
       <div className="container">
-        <a className="navbar-brand logo" href="#">ReactMovieApp</a>
+        <a className="navbar-brand logo">ReactMovieApp</a>
       </div>
     </nav>
     </>
