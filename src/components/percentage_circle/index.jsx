@@ -44,7 +44,7 @@ class PercentageCircle extends React.Component {
                     strokeLinecap={"round"}
                     strokeLinejoin={"round"}
                     fill={"none"}
-                    stroke={"#1e7e34"}
+                    stroke={"#F6B712"}
                 />
                 <text
                     className="circle-text"
@@ -54,7 +54,7 @@ class PercentageCircle extends React.Component {
                     textAnchor="middle"
                     fontSize={"1em"}
                     fontWeight={"bold"}
-                    fill={"#1c7430"}
+                    fill={"#EC7A27"}
                 >
                     {`${percentage}%`}
                 </text>
@@ -73,6 +73,6 @@ PercentageCircle.propTypes = {
 
 PercentageCircle.defaultProps = {
     sqSize: 100,
-    percentage: 15,
+    percentage: 0,
     strokeWidth: 10
 };
