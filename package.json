@@ -1,8 +1,8 @@
 {
-  "homepage": "https://github.com/HeinKhantZaw.github.io/React_Movie_App",
   "name": "react_movie_app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://github.com/HeinKhantZaw.github.io/React_Movie_App",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
@@ -27,7 +27,7 @@
     "build": "REACT_APP_MOVIEDB_API_KEY=YjY0YjMwZmY4YTE4M2RiZmQ1ODBlY2ZiMDAyMWQ3Y2Q= react-scripts build",
     "test": "REACT_APP_MOVIEDB_API_KEY=YjY0YjMwZmY4YTE4M2RiZmQ1ODBlY2ZiMDAyMWQ3Y2Q= react-scripts test",
     "eject": "REACT_APP_MOVIEDB_API_KEY=YjY0YjMwZmY4YTE4M2RiZmQ1ODBlY2ZiMDAyMWQ3Y2Q= react-scripts eject",
-    "predeploy": "REACT_APP_MOVIEDB_API_KEY=YjY0YjMwZmY4YTE4M2RiZmQ1ODBlY2ZiMDAyMWQ3Y2Q= react-scripts build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
